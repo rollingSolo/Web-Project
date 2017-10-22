@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(45deg, rgba(248, 8, 84, 0.8), rgba(6, 223, 212, 0.5)); */
+    font: bold 1.2em/1.5 Verdana,sans-serif;
+    /* rgba(67, 70, 69, 0.5), */
+
+     background:-webkit-gradient(linear, 8% 100%, 12% 3%, from(rgba(255,255,255,1)), to(rgba(0, 0, 0, 1)));
+     font-family: 'Saira Extra Condensed', sans-serif;
+    
+}
+
+
+.flex-container-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: url(../img/wallhaven-199736.png);
+    height: 80vh;
+    overflow: hidden;
+    background-size: cover;
+    -moz-box-shadow:inset 1px 0px 38px #000000;
+    -webkit-box-shadow:inset 1px 0px 38px #000000;
+    box-shadow:inset 1px 0px 60px #000000;
+}
+
+.header::after {
+    content: "ALL I NEED IS MY RATCH";
+    display: block;
+    width: 100%;
+    height: 80vh;
+    /* background: linear-gradient(45deg, rgba(248, 8, 84, 0.8), rgba(6, 223, 212, 0.7)); */
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    opacity: .8;
+    /* margin:30vh 0; */
+    transition: margin .5s ease 0s;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    line-height: 80vh;
+    /* color: linear-gradient(45deg, rgba(240, 24, 92, 0.8), rgba(34, 101, 163, .5)); */
+    text-shadow: 0 0 10px rgba(3, 5, 5, 0.5);
+    color: white;
+    text-shadow: 0 0 25px #d60101;
+    /* filter: blur(2px); */
+}
+
+.header:hover::after{
+    
+    margin: 100vh 0;
+    transition: margin .5s ease 0s;
+}
+
+
+
+.content {
+    margin: 50px 0;
+    text-align: center;
+}
+
+
+.wrap {
+    height: 100vh;
+    background: url(../img/blood.jpg) no-repeat;
+    background-size: cover;
+    
+}
+
+.sketchfab-embed-wrapper {
+    width:120vh;
+   
+    margin: 0 auto;
+    
+}
+.sketchfab-embed-wrapper iframe {
+    
+   
+    height: 100vh;
+    /*width: 1200px;*/
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px black;
+    opacity: 1;
+
+
+    
+    
+}
+
+.sketchfab-embed-wrapper iframe:hover {
+    opacity: 1;
+    transition: opacity 2s ease-in .1s;
+}
+
+.flex-container-row {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /* background: rgba(0, 0, 0, .9); */
+    background: rgb(0, 0, 0);
+    /* background: url(../img/blood.jpg) no-repeat; */
+    /* background: linear-gradient(45deg, rgba(248, 8, 84, 0.5), rgba(6, 223, 212, 0.3));  */
+    
+}
+
+
+.table-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    /* height: 100vh; */
+}
+.table-flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.table-item {
+    font-size: 1.5em;
+    text-align: center;
+    /* border-bottom: 1px solid rgba(255, 255, 255, .9); */
+
+    padding: 5px;
+    margin-top: 2vh;
+}
+
+.table-item:hover {
+    transform: scale(1.2);
+    background: rgba(255, 255, 255, .7);
+    filter: drop-shadow(0 0 10px rgb(199, 5, 5));
+    transition: all .3s ease 0s;
+
+}
+
+.first-children {
+    font-size: 2em;
+}
+
+@media screen and (min-width:480px) and (max-width:882px) {
+    .table-item,.first-children {
+        font-size: 1.2em;
+    }
+
+    .header {
+        background: url(../img/thumb-1920-678628.jpg);
+        background-size: cover;
+        
+    }
+  }
+@media screen and (max-width:601px) {
+    .table-item,.first-children {
+        font-size: 0.7em;
+    }
+    
+    .header {
+        background: url(../img/owl2.jpg);
+        background-size: cover;
+    }
+  }
